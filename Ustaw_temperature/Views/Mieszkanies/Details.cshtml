@@ -1,0 +1,49 @@
+﻿@model Ustaw_temperature.Models.Mieszkanie
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Mieszkanie</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LiczbaOkien)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LiczbaOkien)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LiczbaPokoi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LiczbaPokoi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BazowaTemperatura)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BazowaTemperatura)
+        </dd>
+        <dt class="col-sm-2">
+            @ViewBag.Uzytkownik2
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.Uzytkownik2
+        </dd>
+        
+    </dl>
+</div>
+<div>
+   
+    <a asp-action="Index">Back to List</a>
+</div>
